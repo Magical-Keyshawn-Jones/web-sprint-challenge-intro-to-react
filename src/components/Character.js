@@ -1,6 +1,22 @@
 // Write your Character component here
-import axios from 'axios';
 
-const People = (props) => {}
+
+const People = props => {
+    const { name } = props
+
+    return (
+        <div>
+            {props.name}
+        </div>
+    )
+}
+
+export const people = (person) => {
+    return (
+        <p>
+            {person.name}
+        </p>
+    )
+}
 
 export default People
